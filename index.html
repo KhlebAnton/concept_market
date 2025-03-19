@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept Market</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="modal_menu">
+        <div class="modal_menu__content">
+            <ul class="modal_menu__list">
+                <!-- Первый элемент с выпадающим списком -->
+                <li class="modal_menu__item modal_menu__item_dropdown">
+                    <a href="#" class="modal_menu__link">Женское</a>
+                    <ul class="dropdown-list">
+                        <li><a href="#" class="dropdown-link">Новые поступления</a></li>
+                        <li><a href="#" class="dropdown-link">Посмотреть все</a></li>
+                        <li><a href="#" class="dropdown-link">Верхняя одежда</a></li>
+                        <li><a href="#" class="dropdown-link">Верхняя одежда</a></li>
+                        <li><a href="#" class="dropdown-link">Верхняя одежда</a></li>
+                        <li><a href="#" class="dropdown-link">Верхняя одежда</a></li>
+                    </ul>
+                </li>
+        
+                <!-- Второй элемент с выпадающим списком -->
+                <li class="modal_menu__item modal_menu__item_dropdown">
+                    <a href="#" class="modal_menu__link">Мужское</a>
+                    <ul class="dropdown-list">
+                        <li><a href="#" class="dropdown-link">Новые поступления</a></li>
+                        <li><a href="#" class="dropdown-link">Посмотреть все</a></li>
+                        <li><a href="#" class="dropdown-link">Верхняя одежда</a></li>
+                        <li><a href="#" class="dropdown-link">Верхняя одежда</a></li>
+                        <li><a href="#" class="dropdown-link">Верхняя одежда</a></li>
+                        <li><a href="#" class="dropdown-link">Верхняя одежда</a></li>
+                    </ul>
+                </li>
+        
+                <li class="modal_menu__item">
+                    <a href="#" class="modal_menu__link">Дизайнерам</a>
+                </li>
+                <li class="modal_menu__item">
+                    <a href="#" class="modal_menu__link">Art Festival Clothes</a>
+                </li>
+                <li class="modal_menu__item">
+                    <a href="#" class="modal_menu__link">Акции</a>
+                </li>
+                <li class="modal_menu__item">
+                    <a href="#" class="modal_menu__link">винтаж</a>
+                </li>
+                <li class="modal_menu__item">
+                    <a href="#" class="modal_menu__link">Контакты</a>
+                </li>
+            </ul>
+            <form class="modal_menu-form">
+                <div class="modal_menu-form__title">
+                    будьте в курсе новостей
+                </div>
+                <input type="email" name="email" id="mailingEmail" placeholder="Ваш Email" required>
+                <button class="btn btn-modal-menu" type="submit">→</button>
+                <span class="form_politics">
+                    Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+                </span>
+            </form>
+            <div class="modal_menu__footer">
+                <div class="modal_menu__footer-title">
+                    возникли вопросы?
+                </div>
+                <div class="modal_menu__footer-wrapper_link">
+                    <a href="tel:+79035299939">+7 903 529-99-39</a>
+                    <span class="modal_menu__footer-wrapper_link__desc">Звонки/ Telegram/ WhatsApp</span>
+                </div>
+                <div class="modal_menu__footer-wrapper_link">
+                    <a href="mailto:CONCEPTMONLINE@GMAIL.COM">CONCEPTMONLINE@GMAIL.COM</a>
+                    <span class="modal_menu__footer-wrapper_link__desc">По вопросам сотрудничества</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__content_wrapper decktop-hidden">
+                <div class="header__btns">
+                    <div class="header__btn header__btn_menu"></div>
+                    <div class="header__btn header__btn_search"></div>
+                  
+                </div>
+                
+            </div>
+            <div class="header__content_wrapper">
+                <div class="header__logo"></div>
+                <div class="header__nav">
+                    <ol class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="#">Женское</a>
+                            <div class="dropdown-menu">
+
+                                <div class="container dropdown-menu_container">
+                                    <div class="close_btn dropdown-menu__close"></div>
+                                    <div class="dropdown-menu_top">
+                                        <ul class="dropdown-menu__list">
+                                            <li class="dropdown-menu__list-title">бренды</li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                        </ul>
+                                        <ul class="dropdown-menu__list">
+                                            <li class="dropdown-menu__list-title">категории</li>
+                                            <li><a href="#">Ботинки </a></li>
+                                            <li><a href="#">Кроссовки </a></li>
+                                            <li><a href="#">Свитеры </a></li>
+                                            <li><a href="#">Платья </a></li>
+                                            <li><a href="#">Рубашки </a></li>
+                                            <li><a href="#">Лонгсливы </a></li>
+                                            <li><a href="#">Куртки </a></li>
+                                            <li><a href="#">Топы </a></li>
+                                            <li><a href="#">Толстовки </a></li>
+                                        </ul>
+                                        <div class="dropdown-menu__popular">
+                                            <div class="dropdown-menu__list-title">популярные товары</div>
+                                            <div class="popular-product__wrapper">
+                                                <div class="card-product">
+                                                    <div class="card-product__img-wrapper">
+                                                        <img class="card-product__img" src="./img/card.jfif" alt="">
+                                                    </div>
+
+                                                    <div class="card-product__title">ПАЛЬТО MONTE MORO</div>
+                                                    <div class="card-product__price">46 600 р.</div>
+                                                </div>
+                                                <div class="card-product">
+                                                    <div class="card-product__img-wrapper">
+                                                        <img class="card-product__img" src="./img/card.jfif" alt="">
+                                                    </div>
+                                                    <div class="card-product__title">ПАЛЬТО MONTE MORO</div>
+                                                    <div class="card-product__price">46 600 р.</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="dropdown-menu__stoks">
+                                            <div class="dropdown-menu__list-title">акции</div>
+                                            <div class="stoks-product__wrapper">
+                                                <div class="card-product">
+                                                    <div class="card-product__img-wrapper">
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="dropdown-menu_botom">
+                                        <div class="nav-list__item">
+                                            <a href="#">все товары</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#">мужское</a>
+                            <div class="dropdown-menu">
+
+                                <div class="container dropdown-menu_container">
+                                    <div class="close_btn dropdown-menu__close"></div>
+                                    <div class="dropdown-menu_top">
+                                        <ul class="dropdown-menu__list">
+                                            <li class="dropdown-menu__list-title">бренды</li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                            <li><a href="#">Бренд </a></li>
+                                        </ul>
+                                        <ul class="dropdown-menu__list">
+                                            <li class="dropdown-menu__list-title">категории</li>
+                                            <li><a href="#">Ботинки </a></li>
+                                            <li><a href="#">Кроссовки </a></li>
+                                            <li><a href="#">Свитеры </a></li>
+                                            <li><a href="#">Платья </a></li>
+                                            <li><a href="#">Рубашки </a></li>
+                                            <li><a href="#">Лонгсливы </a></li>
+                                            <li><a href="#">Куртки </a></li>
+                                            <li><a href="#">Топы </a></li>
+                                            <li><a href="#">Толстовки </a></li>
+                                        </ul>
+                                        <div class="dropdown-menu__popular">
+                                            <div class="dropdown-menu__list-title">популярные товары</div>
+                                            <div class="popular-product__wrapper">
+                                                <div class="card-product">
+                                                    <div class="card-product__img-wrapper">
+                                                        <img class="card-product__img" src="./img/card.jfif" alt="">
+                                                    </div>
+
+                                                    <div class="card-product__title">ПАЛЬТО MONTE MORO</div>
+                                                    <div class="card-product__price">46 600 р.</div>
+                                                </div>
+                                                <div class="card-product">
+                                                    <div class="card-product__img-wrapper">
+                                                        <img class="card-product__img" src="./img/card.jfif" alt="">
+                                                    </div>
+                                                    <div class="card-product__title">ПАЛЬТО MONTE MORO</div>
+                                                    <div class="card-product__price">46 600 р.</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="dropdown-menu__stoks">
+                                            <div class="dropdown-menu__list-title">акции</div>
+                                            <div class="stoks-product__wrapper">
+                                                <div class="card-product">
+                                                    <div class="card-product__img-wrapper">
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="dropdown-menu_botom">
+                                        <div class="nav-list__item">
+                                            <a href="#">все товары</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#">дизайнерам</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#">Art Festival Clothes</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#">винтаж</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#">акции</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="header__content_wrapper">
+                <div class="header__btns">
+                    <div class="header__btn header__btn_search mobile-hidden"></div>
+                    <div class="header__btn header__btn_shop"></div>
+                    <div class="header__btn header__btn_like"></div>
+                    <div class="header__btn header__btn_user"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero__slide">
+                            <div class="hero__slide_bg" style="background-image: url('./img/promo1.png');"></div>
+                            <div class="hero__info">
+                                <h1 class="hero__title">твой образ, который <br>меняет правила</h1>
+                                <p class="hero__text">более 100 независимых дизайнеров</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero__slide">
+                            <div class="hero__slide_bg" style="background-image: url('./img/promo2.png');"></div>
+                            <div class="hero__info">
+                                <h2 class="hero__title">Другой заголовок</h2>
+                                <p class="hero__text">более 100 независимых дизайнеров</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero__slide">
+                            <div class="hero__slide_bg" style="background-image: url('./img/promo3.png');"></div>
+                            <div class="hero__info">
+                                <h2 class="hero__title">Третий заголовок</h2>
+                                <p class="hero__text">более 100 независимых дизайнеров</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="best container">
+            <h2 class="section__title">
+                Лучшее от локальных брендов и дизайнеров
+            </h2>
+            <div class="swiper__secondary">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-product card-product_l">
+                            <div class="product-btn_like"></div>
+                            <div class="card-product__img-wrapper">
+                                <img class="card-product__img" src="./img/card2.jfif" alt="">
+                            </div>
+
+                            <div class="card-product__title no-swipe">ПАЛЬТО MONTE MORO</div>
+                            <div class="card-product__price no-swipe">46 600 р.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-product card-product_l">
+                            <div class="product-btn_like"></div>
+                            <div class="card-product__img-wrapper">
+                                <img class="card-product__img" src="./img/card3.jfif" alt="">
+                            </div>
+
+                            <div class="card-product__title no-swipe">ПАЛЬТО MONTE MORO</div>
+                            <div class="card-product__price no-swipe">46 600 р.</div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-product card-product_l">
+                            <div class="product-btn_like"></div>
+                            <div class="card-product__img-wrapper">
+                                <img class="card-product__img" src="./img/card.jfif" alt="">
+                            </div>
+
+                            <div class="card-product__title no-swipe">ПАЛЬТО MONTE MORO</div>
+                            <div class="card-product__price no-swipe">46 600 р.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-product card-product_l">
+                            <div class="product-btn_like"></div>
+                            <div class="card-product__img-wrapper">
+                                <img class="card-product__img" src="./img/promo2.png" alt="">
+                            </div>
+
+                            <div class="card-product__title no-swipe">ПАЛЬТО MONTE MORO</div>
+                            <div class="card-product__price no-swipe">46 600 р.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="section_catalog">
+            <a href="#" class="section_catalog-item">
+                <div class="section_catalog-item__bg">
+                    <img class="section_catalog-item__bg-img" src="./img/catalog1.png">
+                </div>
+
+                <div class="section_catalog-item__info">
+                    <div class="section_catalog-item__title">мужское</div>
+                    <div class="section_catalog-item__link">cмотреть</div>
+                </div>
+            </a>
+            <a href="#" class="section_catalog-item bg_grey">
+                <div class="section_catalog-item__bg">
+                    <img class="section_catalog-item__bg-img" src="./img/catalog2.jfif">
+                </div>
+                <div class="section_catalog-item__info">
+                    <div class="section_catalog-item__title">женское</div>
+                    <div class="section_catalog-item__link">cмотреть</div>
+                </div>
+            </a>
+        </section>
+        <section class="specials container">
+            <div class="section_top-info">
+                <h2 class="section__title">
+                    Особые предложения
+                </h2>
+                <a class="btn_link" href="#">cмотреть</a>
+            </div>
+
+            <div class="swiper__secondary">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-product card-product_l">
+                            <div class="product-btn_like"></div>
+                            <div class="card-product__img-wrapper">
+                                <img class="card-product__img" src="./img/card2.jfif" alt="">
+                            </div>
+
+                            <div class="card-product__title no-swipe" >ПАЛЬТО MONTE MORO</div>
+                            <div class="card-product__price no-swipe">46 600 р.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-product card-product_l">
+                            <div class="product-btn_like"></div>
+                            <div class="card-product__img-wrapper">
+                                <img class="card-product__img" src="./img/card3.jfif" alt="">
+                            </div>
+
+                            <div class="card-product__title no-swipe">ПАЛЬТО MONTE MORO</div>
+                            <div class="card-product__price no-swipe">46 600 р.</div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-product card-product_l">
+                            <div class="product-btn_like"></div>
+                            <div class="card-product__img-wrapper">
+                                <img class="card-product__img" src="./img/card.jfif" alt="">
+                            </div>
+
+                            <div class="card-product__title no-swipe">ПАЛЬТО MONTE MORO</div>
+                            <div class="card-product__price no-swipe">46 600 р.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-product card-product_l">
+                            <div class="product-btn_like"></div>
+                            <div class="card-product__img-wrapper">
+                                <img class="card-product__img" src="./img/promo2.png" alt="">
+                            </div>
+
+                            <div class="card-product__title no-swipe">ПАЛЬТО MONTE MORO</div>
+                            <div class="card-product__price no-swipe">46 600 р.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="events">
+
+            <div class="events-info">
+                <div class="events__title">
+                    events
+                </div>
+                <div class="events__text">
+                    С 2015 года мы проводим имиджевые фэшн мероприятия, направленные на развитие, продвижение и
+                    поддержку индустрии моды и дизайна.
+                </div>
+            </div>
+
+
+        </section>
+        <section class="form container_s">
+            <h2 class="section__title">
+                Подписывайтесь на рассылку, чтобы первыми узнавать о ближайших фестивалях и модных событиях
+            </h2>
+            <form class="form_mailing">
+                <input type="email" name="email" id="mailingEmail" placeholder="Ваш Email" required>
+                <button class="btn btn-primary" type="submit">подписаться на рассылку</button>
+                <span class="form_politics">
+                    Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+                </span>
+            </form>
+        </section>
+        <section class="about-me container_s">
+            <h2 class="section__title">
+                Для меня концептуальная мода — это глубокий  внутренний  смысл,  выходящий  на  первый  план.
+            </h2>
+            <div class="about-me__info">
+                <div class="about-me__title">
+                    <div class="about-me__name">
+                        Ирина Flash
+                    </div>
+                    <div class="about-me__prof">
+                        Основатель Сoncept Market
+                    </div>
+                </div>
+                <a class="about-me_link btn_link" href="#">больше о нас</a>
+            </div>
+        </section>
+        <section class="our-influencer">
+            <div class="container">
+                <h2 class="section__title">
+                    Выбор тех, кто создает культурный контекст
+                </h2>
+                <div class="swiper__influencer">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="influencer-item">
+                                <img class="influencer-item__img" src="./img/inf1.png" alt="">
+                                <div class="influencer-item__title no-swipe">Имя фамилия</div>
+                                <div class="influencer-item__link no-swipe">@ник</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="influencer-item">
+                                <img class="influencer-item__img" src="./img/inf2.png" alt="">
+                                <div class="influencer-item__title no-swipe">Имя фамилия</div>
+                                <div class="influencer-item__link no-swipe">@ник</div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="influencer-item">
+                                <img class="influencer-item__img" src="./img/inf3.png" alt="">
+                                <div class="influencer-item__title no-swipe">Имя фамилия</div>
+                                <div class="influencer-item__link no-swipe">@ник</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="influencer-item">
+                                <img class="influencer-item__img" src="./img/inf4.png" alt="">
+                                <div class="influencer-item__title no-swipe">Имя фамилия</div>
+                                <div class="influencer-item__link no-swipe">@ник</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section>
+        <section class="our-partners">
+            <div class="container">
+                <h2 class="section__title">
+                    Наши партнеры
+                </h2>
+                <div class="swiper__partners">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="our-partners__item-img" src="./img/partners/1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="our-partners__item-img" src="./img/partners/2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="our-partners__item-img" src="./img/partners/3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="our-partners__item-img" src="./img/partners/4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="our-partners__item-img" src="./img/partners/5.png" alt=""> 
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="our-partners__item-img" src="./img/partners/6.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="our-partners__item-img" src="./img/partners/7.png" alt="">
+                        </div>
+                       
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <ul class="footer__list">
+                    <div class="footer__list-title">покупателю</div>
+                    <li class="footer__list-item"><a href="#">Оплата</a></li>
+                    <li class="footer__list-item"><a href="#">доставка и самовывоз</a></li>
+                    <li class="footer__list-item"><a href="#">обмен и возврат</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <div class="footer__list-title">контакты</div>
+                    <li class="footer__list-item"><a href="#">О магазине</a></li>
+                    <li class="footer__list-item"><a href="#">контакты</a></li>
+                    <li class="footer__list-item footer__list-item_line"><a href="#">telegram</a></li>
+                    <li class="footer__list-item footer__list-item_line"><a href="#">вконтакте</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <div class="footer__list-title">стать партнером:</div>
+                    <li class="footer__list-item">
+                        <a href="tel:+79035299939">+7 903 529-99-39</a>
+                        <div class="footer__list-item__link-desc">Звонки/ Telegram/ WhatsApp</div>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="mailto:CONCEPTMONLINE@GMAIL.COM">CONCEPTMONLINE@GMAIL.COM</a>
+                        <div class="footer__list-item__link-desc">По вопросам сотрудничества</div>
+                    </li>
+                    <li class="footer__list-item">С 10:00 ДО 22:00</li>
+                </ul>
+                <form class="footer_form">
+                    <div class="footer_form-title">будьте в курсе новостей</div>
+                    <div class="footer_form__wrapper">
+                        
+                        <input type="email" name="email" id="mailingEmail" placeholder="Ваш Email" required>
+                        <button class="btn btn-footer_form" type="submit">→</button>
+                
+                    </div>
+                    <span class="footer_form_politics">
+                        Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+                    </span>
+                </form>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_bottom__item">
+                    <a href="#">политика конфиденциальности</a>
+                    <a href="#">публичная оферта</a>
+                </div>
+                <span class="footer_bottom__item">© concept market</span>
+                <span class="footer_bottom__item">2025</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiperHero = new Swiper('.hero__swiper', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true,
+            },
+        });
+
+        const swiperProductList = document.querySelectorAll('.swiper__secondary');
+
+        swiperProductList.forEach(swiper => {
+            const swiperProduct = new Swiper(swiper, {
+                direction: 'horizontal',
+                loop: false,
+                noSwiping: true, // Включаем запрет свайпа
+  noSwipingClass: 'no-swipe', // Указываем класс для элементов, на которых свайп запрещён
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                slidesPerView: 2, // По умолчанию показываем 2 слайда
+                spaceBetween: 20, // Отступ между слайдами
+                breakpoints: {
+                    600: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+
+                    1000: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                },
+            });
+        });
+
+        const swiperInfluencer = new Swiper('.swiper__influencer', {
+            direction: 'horizontal',
+            loop: false,
+            noSwiping: true, // Включаем запрет свайпа
+            noSwipingClass: 'no-swipe', // Указываем класс для элементов, на которых свайп запрещён
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 2, // По умолчанию показываем 2 слайда
+            spaceBetween: 8, // Отступ между слайдами
+            breakpoints: {
+                600: {
+                    slidesPerView: 3,
+
+                },
+
+                1000: {
+                    slidesPerView: 4,
+
+                },
+            },
+        });
+        const swiperPartner = new Swiper('.swiper__partners', {
+            direction: 'horizontal',
+            loop: false,
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 2.5, // По умолчанию показываем 2 слайда
+            spaceBetween: 8, // Отступ между слайдами
+            breakpoints: {
+                600: {
+                    slidesPerView: 4.5,
+
+                },
+
+                1000: {
+                    slidesPerView: 7,
+
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
