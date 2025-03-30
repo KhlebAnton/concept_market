@@ -115,8 +115,13 @@ document.addEventListener('DOMContentLoaded', function () {
         hideSearchMenu()
     })
     btnsSearch.forEach(btn => {
-        btn.addEventListener('mouseenter', showSearchMenu);
-        btn.addEventListener('mouseleave', hideSearchMenu); 
+        if(btn.classList.contains('mobile-hidden')) {
+            btn.addEventListener('mouseenter', showSearchMenu);
+            btn.addEventListener('mouseleave', hideSearchMenu); 
+        } else {
+            btn.addEventListener('click', showSearchMenu);
+        }
+       
     });
     
     dropdownSearch.addEventListener('mouseenter', cancelHide);
