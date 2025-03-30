@@ -25,7 +25,7 @@
                         <li><a href="#" class="dropdown-link">Верхняя одежда</a></li>
                     </ul>
                 </li>
-        
+
                 <!-- Второй элемент с выпадающим списком -->
                 <li class="modal_menu__item modal_menu__item_dropdown">
                     <a href="#" class="modal_menu__link">Мужское</a>
@@ -38,7 +38,7 @@
                         <li><a href="#" class="dropdown-link">Верхняя одежда</a></li>
                     </ul>
                 </li>
-        
+
                 <li class="modal_menu__item">
                     <a href="#" class="modal_menu__link">Дизайнерам</a>
                 </li>
@@ -86,9 +86,9 @@
                 <div class="header__btns">
                     <div class="header__btn header__btn_menu"></div>
                     <div class="header__btn header__btn_search"></div>
-                  
+
                 </div>
-                
+
             </div>
             <div class="header__content_wrapper">
                 <div class="header__logo"></div>
@@ -271,11 +271,110 @@
             <div class="header__content_wrapper">
                 <div class="header__btns">
                     <div class="header__btn header__btn_search mobile-hidden"></div>
-                    <div class="header__btn header__btn_shop"></div>
-                    <div class="header__btn header__btn_like"></div>
+                    <div class="header__btn header__btn_shop">
+                        <div class="header__btn_icon-count"> 0</div>
+                    </div>
+                    <div class="header__btn header__btn_like">
+                        <div class="header__btn_icon-count"> 1</div>
+                    </div>
                     <div class="header__btn header__btn_user"></div>
                 </div>
             </div>
+        </div>
+        <div class="dropdown-menu_search">
+
+            <div class="container ">
+                <div class="menu_search__top">
+                    <div class="menu_search__back"></div>
+                    <input class="menu_search__input" type="text" name="search" id="search" placeholder="поиск по наименованию товара...">
+                    <div class="btn btn-search_menu">Поиск</div>
+                    <div class="close_btn"></div>
+
+                </div>
+                <div class="menu_search__hints">
+                    <div class="menu_search__hints-item">
+                        Брюки и штаны
+                    </div>
+                    <div class="menu_search__hints-item">
+                        Пальто
+                    </div>
+                    <div class="menu_search__hints-item">
+                        Жилет
+                    </div>
+                    <div class="menu_search__hints-item">
+                        Сумка
+                    </div>
+                </div>
+                <div class="menu_search__content">
+                    <div class="menu_search__content_left">
+                        <div class="menu_search__content_hints">
+                            <div class="menu_search__content_hints__title">
+                                часто ищут
+                            </div>
+                            <div class="search-content_hints">
+                                <div class="search-content_hints-item">
+                                    Брюки и штаны
+                                </div>
+                                <div class="search-content_hints-item">
+                                    Жилет
+                                </div>
+                                <div class="search-content_hints-item">
+                                    Платье
+                                </div>
+                                <div class="search-content_hints-item">
+                                    Тренч
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_search__content_catalog">
+                            <a href="#" class="menu_search__content_catalog-item">
+                                рубашки
+                            </a>
+                            <a href="#" class="menu_search__content_catalog-item">
+                                женское
+                            </a>
+                            <a href="#" class="menu_search__content_catalog-item">
+                                мужское
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="menu_search__content_products">
+                        <div class="search__content_products-title">
+                            вам могут понравиться
+                        </div>
+                        <div class="search__content_products">
+                            <div class="card-product">
+                                <div class="card-product__img-wrapper">
+                                    <img class="card-product__img" src="./img/card.jfif" alt="">
+                                </div>
+
+                                <div class="card-product__title">ПАЛЬТО MONTE MORO</div>
+                                <div class="card-product__price">46 600 р.</div>
+                            </div>
+                            <div class="card-product">
+                                <div class="card-product__img-wrapper">
+                                    <img class="card-product__img" src="./img/card.jfif" alt="">
+                                </div>
+                                <div class="card-product__title">ПАЛЬТО MONTE MORO</div>
+                                <div class="card-product__price">46 600 р.</div>
+                            </div><div class="card-product">
+                                <div class="card-product__img-wrapper">
+                                    <img class="card-product__img" src="./img/card.jfif" alt="">
+                                </div>
+
+                                <div class="card-product__title">ПАЛЬТО MONTE MORO</div>
+                                <div class="card-product__price">46 600 р.</div>
+                            </div>
+                           
+                        </div>
+                        <div class="search__content_bottom">
+                            <a href="#">cмотреть все результаты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
     <main class="main">
@@ -410,7 +509,7 @@
                                 <img class="card-product__img" src="./img/card2.jfif" alt="">
                             </div>
 
-                            <div class="card-product__title no-swipe" >ПАЛЬТО MONTE MORO</div>
+                            <div class="card-product__title no-swipe">ПАЛЬТО MONTE MORO</div>
                             <div class="card-product__price no-swipe">46 600 р.</div>
                         </div>
                     </div>
@@ -558,7 +657,7 @@
                             <img class="our-partners__item-img" src="./img/partners/4.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="our-partners__item-img" src="./img/partners/5.png" alt=""> 
+                            <img class="our-partners__item-img" src="./img/partners/5.png" alt="">
                         </div>
                         <div class="swiper-slide">
                             <img class="our-partners__item-img" src="./img/partners/6.png" alt="">
@@ -566,7 +665,7 @@
                         <div class="swiper-slide">
                             <img class="our-partners__item-img" src="./img/partners/7.png" alt="">
                         </div>
-                       
+
                     </div>
 
                     <div class="swiper-pagination"></div>
@@ -606,10 +705,10 @@
                 <form class="footer_form">
                     <div class="footer_form-title">будьте в курсе новостей</div>
                     <div class="footer_form__wrapper">
-                        
+
                         <input type="email" name="email" id="mailingEmail" placeholder="Ваш Email" required>
                         <button class="btn btn-footer_form" type="submit">→</button>
-                
+
                     </div>
                     <span class="footer_form_politics">
                         Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
@@ -630,7 +729,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/swipers.js"></script>
-   
+
 </body>
 
 </html>

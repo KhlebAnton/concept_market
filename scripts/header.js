@@ -77,4 +77,51 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
+
+    const btnsSearch = document.querySelectorAll('.header__btn_search');
+    const dropdownSearch = document.querySelector('.dropdown-menu_search');
+    const backdropdownMenu = dropdownSearch.querySelector('.menu_search__back');
+
+    const inputSearch = document.querySelector('.menu_search__input');
+    const resetBtnSearch = dropdownSearch.querySelector('.close_btn');
+
+    resetBtnSearch.addEventListener('click', ()=>{
+        inputSearch.value = '';
+    })
+
+    let hideTimeout = null;
+    
+    function showSearchMenu() {
+        if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+        }
+        dropdownSearch.style.opacity = '1';
+        dropdownSearch.style.visibility = 'visible';
+    }
+    function hideSearchMenu() {
+        hideTimeout = setTimeout(() => {
+            dropdownSearch.style.opacity = '0';
+            dropdownSearch.style.visibility = 'hidden';
+        }, 300);
+    }
+    function cancelHide() {
+        if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+        }
+    }
+    backdropdownMenu.addEventListener('click', ()=> {
+        hideSearchMenu()
+    })
+    btnsSearch.forEach(btn => {
+        btn.addEventListener('mouseenter', showSearchMenu);
+        btn.addEventListener('mouseleave', hideSearchMenu); 
+    });
+    
+    dropdownSearch.addEventListener('mouseenter', cancelHide);
+    dropdownSearch.addEventListener('mouseleave', hideSearchMenu);
+
+
+
 });
