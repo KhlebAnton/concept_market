@@ -83,57 +83,47 @@ document.addEventListener('DOMContentLoaded', function () {
     const backdropdownMenu = dropdownSearch.querySelector('.menu_search__back');
 
     const inputSearch = document.querySelector('.menu_search__input');
-    const resetBtnSearch = dropdownSearch.querySelector('.close_btn');
+    const closeBtnSearch = dropdownSearch.querySelector('.close_btn');
 
-    resetBtnSearch.addEventListener('click', () => {
-        inputSearch.value = '';
-    })
-
-    let hideTimeout = null;
+    
+    closeBtnSearch.addEventListener('click',hideSearchMenu);
+    backdropdownMenu.addEventListener('click',hideSearchMenu);
 
     function showSearchMenu() {
-        if (hideTimeout) {
-            clearTimeout(hideTimeout);
-            hideTimeout = null;
-        }
+       
         dropdownSearch.style.opacity = '1';
         dropdownSearch.style.visibility = 'visible';
 
     }
     function hideSearchMenu() {
-        hideTimeout = setTimeout(() => {
+       
             dropdownSearch.style.opacity = '0';
             dropdownSearch.style.visibility = 'hidden';
             document.body.classList.remove('no-scroll');
             document.documentElement.classList.remove('no-scroll');
-        }, 300);
     }
-    function cancelHide() {
-        if (hideTimeout) {
-            clearTimeout(hideTimeout);
-            hideTimeout = null;
-        }
-    }
-    backdropdownMenu.addEventListener('click', () => {
-        hideSearchMenu()
-    })
+   
+   
     btnsSearch.forEach(btn => {
         if (btn.classList.contains('mobile-hidden')) {
-            btn.addEventListener('mouseenter', showSearchMenu);
-            btn.addEventListener('mouseleave', hideSearchMenu);
+            btn.addEventListener('click', () => {
+               
+                showSearchMenu()
+            });
+
         } else {
             btn.addEventListener('click', () => {
                 document.body.classList.add('no-scroll');
                 document.documentElement.classList.add('no-scroll');
                 showSearchMenu()
             });
+
         }
+       
 
     });
 
-    dropdownSearch.addEventListener('mouseenter', cancelHide);
-    dropdownSearch.addEventListener('mouseleave', hideSearchMenu);
-
+   
 
 
 });
